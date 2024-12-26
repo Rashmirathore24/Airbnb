@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(150, 150, 210);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input[type="text"] {
+            width: 200px;
+            max-width: 200px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        select {
+            padding: 5px;
+            width: 210px;
+            max-width: 210px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            width: auto;
+        }
+        @media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    table {
+        margin-top: 10px;
+        width: 100%; 
+    }
+
+    td {
+        font-size: 14px; 
+        padding: 8px;
+    }
+
+    input[type="text"], select {
+        max-width: none; 
+        width: 100%;
+    }
+
+    button {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    td {
+        font-size: 12px; 
+    }
+
+    button {
+        padding: 8px 15px;
+}
+    </style>
+</head>
+
+<body align="center">
+    <li><a class="font" href="index.html">popular places</a></li>
+    <li><a class="font" href="pakage.html">Online packages</a></li>
+    <li><a class="font" href="form.html" class="registred-btn">Register Now</a></li>
+    <div class="main">
+        <h2>Registration Form</h2>
+        
+        <table class="header">
+            <tr>
+                <td>
+                    Name:
+                </td>
+                <td>
+                    <input type="text" name="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Birth Date:
+                </td>
+                <td>
+                    <input type="text" birth date="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email:
+                </td>
+                <td>
+                    <input type="text" Email="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    confirm email*:
+                </td>
+                <td>
+                    <input type="text" confirm email="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Address:
+                </td>
+                <td>
+                    <input type="text" address="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    phone number:
+                </td>
+                <td>
+                    <input type="text" phone number="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    city:
+                </td>
+                <td>
+                    <label for="cities">Choose a city:</label>
+                    <select id="cities" name="cities">
+                        <option value="delhi">Delhi</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="bangalore">Bangalore</option>
+                        <option value="kolkata">Kolkata</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="hyderabad">Hyderabad</option>
+                        <option value="pune">Pune</option>
+                        <option value="jaipur">Jaipur</option>
+                        <option value="ahmedabad">Ahmedabad</option>
+                        <option value="lucknow">Lucknow</option>
+                    </select>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Special Request</td>
+                <td><input type="text" request="">
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <center>
+                        <button>submit</button>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
